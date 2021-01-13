@@ -10,5 +10,11 @@ namespace CriticalThinkingClassesAndObjects2_Computer
     {
         double totalStorage;
         double availableStorage;
+
+        public HardDrive(double totalStorage, double availableStorage)
+        {
+            this.totalStorage = totalStorage;
+            this.availableStorage = availableStorage;
+        }
     }
 }

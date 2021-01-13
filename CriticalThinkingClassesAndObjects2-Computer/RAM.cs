@@ -10,5 +10,11 @@ namespace CriticalThinkingClassesAndObjects2_Computer
     {
         double totalGigabytes;
         string brand;
+
+        public RAM(double totalGigabytes, string brand)
+        {
+            this.totalGigabytes = totalGigabytes;
+            this.brand = brand;
+        }
     }
 }

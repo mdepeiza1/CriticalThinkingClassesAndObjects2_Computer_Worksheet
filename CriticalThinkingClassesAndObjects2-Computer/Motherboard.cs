@@ -13,5 +13,17 @@ namespace CriticalThinkingClassesAndObjects2_Computer
         RAM temporaryMemory;
         HardDrive storage;
         GPU graphics;
+
+        public Motherboard(string manufacturer, CPU processor, RAM temporaryMemory, 
+            HardDrive storage, GPU graphics)
+        {
+            this.manufacturer = manufacturer;
+            this.processor = processor;
+            this.temporaryMemory = temporaryMemory;
+            this.storage = storage;
+            this.graphics = graphics;
+        }
+
+
     }
 }

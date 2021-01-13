@@ -10,5 +10,11 @@ namespace CriticalThinkingClassesAndObjects2_Computer
     {
         string manufacturer;
         string name;
+
+        public CPU(string manufacturer, string name)
+        {
+            this.manufacturer = manufacturer;
+            this.name = name;
+        }
     }
 }
