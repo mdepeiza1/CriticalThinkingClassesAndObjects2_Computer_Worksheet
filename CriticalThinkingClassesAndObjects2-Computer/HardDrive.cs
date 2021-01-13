@@ -8,8 +8,9 @@ namespace CriticalThinkingClassesAndObjects2_Computer
 {
     class HardDrive
     {
-        double totalStorage;
-        double availableStorage;
+        public double totalStorage;
+        public double availableStorage;
+        public List<Applications> ApplicationsInHardDrive;
 
         public HardDrive(double totalStorage, double availableStorage)
         {
