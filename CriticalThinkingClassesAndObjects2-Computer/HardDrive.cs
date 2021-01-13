@@ -14,6 +14,7 @@ namespace CriticalThinkingClassesAndObjects2_Computer
 
         public HardDrive(double totalStorage, double availableStorage)
         {
+            this.ApplicationsInHardDrive = new List<Applications>();
             this.totalStorage = totalStorage;
             this.availableStorage = availableStorage;
         }

@@ -17,10 +17,12 @@ namespace CriticalThinkingClassesAndObjects2_Computer
             this.name = name;
         }
 
-        public bool CheckRequirements(Applications app, HardDrive hardDrive, RAM ram)
+        public bool CheckRequirements(Applications app, HardDrive hardDrive, 
+            RAM ram, GPU gpu)
         {
-            if ((ram.totalGigabytes >= app.RequiredRAM)
-                && (hardDrive.availableStorage >= app.RequiredStorage))
+            if ((ram.totalGigabytes >= app.requiredRAM)
+                && (hardDrive.availableStorage >= app.requiredStorage)
+                && (gpu.effectiveMemory >= app.requiredEffectiveMemory))
             {
                 return true;
             }

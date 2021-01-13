@@ -10,6 +10,10 @@ namespace CriticalThinkingClassesAndObjects2_Computer
     {
         static void Main(string[] args)
         {
+            Computer computer = new Computer();
+
+            computer.motherboard.InstallApplication(computer.game);
+            computer.motherboard.InstallApplication(computer.textEditor);
         }
     }
 }

@@ -26,7 +26,7 @@ namespace CriticalThinkingClassesAndObjects2_Computer
 
         public void InstallApplication(Applications app)
         {
-            if(processor.CheckRequirements(app, storage, temporaryMemory))
+            if(processor.CheckRequirements(app, storage, temporaryMemory, graphics))
             {
                 storage.ProcessInstall(app, storage, temporaryMemory);
             }

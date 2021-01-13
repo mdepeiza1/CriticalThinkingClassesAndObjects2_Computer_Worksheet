@@ -6,19 +6,21 @@ using System.Threading.Tasks;
 
 namespace CriticalThinkingClassesAndObjects2_Computer
 {
-    class Applications
+    public abstract class Applications
     {
-        public string ApplicationName;
-        public string ApplicationType;
-        public double RequiredRAM;
-        public double RequiredStorage;
+        public string applicationName;
+        public string applicationType;
+        public double requiredRAM;
+        public double requiredStorage;
+        public double requiredEffectiveMemory; //was this the right implementation?
         
         public Applications()
         {
-            ApplicationName = "Slack";
-            ApplicationType = "Messaging Service";
-            RequiredRAM = 4.0; //In Gigabytes
-            RequiredStorage = .512; // In Gigabytes
+            applicationName = "Slack";
+            applicationType = "Messaging Service";
+            requiredRAM = 4.0; //In Gigabytes
+            requiredStorage = .512; // In Gigabytes
+            requiredEffectiveMemory = 0.0; //was this the right implementation?
         }
     }
 }
