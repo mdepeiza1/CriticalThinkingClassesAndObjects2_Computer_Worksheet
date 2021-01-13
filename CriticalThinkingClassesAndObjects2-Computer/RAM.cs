@@ -8,8 +8,8 @@ namespace CriticalThinkingClassesAndObjects2_Computer
 {
     class RAM
     {
-        double totalGigabytes;
-        string brand;
+        public double totalGigabytes;
+        public string brand;
 
         public RAM(double totalGigabytes, string brand)
         {

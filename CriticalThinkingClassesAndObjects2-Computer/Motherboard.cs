@@ -8,11 +8,11 @@ namespace CriticalThinkingClassesAndObjects2_Computer
 {
     class Motherboard
     {
-        string manufacturer;
-        CPU processor;
-        RAM temporaryMemory;
-        HardDrive storage;
-        GPU graphics;
+        public string manufacturer;
+        public CPU processor;
+        public RAM temporaryMemory;
+        public HardDrive storage;
+        public GPU graphics;
 
         public Motherboard(string manufacturer, CPU processor, RAM temporaryMemory, 
             HardDrive storage, GPU graphics)
@@ -24,6 +24,12 @@ namespace CriticalThinkingClassesAndObjects2_Computer
             this.graphics = graphics;
         }
 
-
+        public void InstallApplication(Applications app)
+        {
+            if(processor.CheckRequirements(app, storage, temporaryMemory))
+            {
+                storage.ProcessInstall(app, storage, temporaryMemory);
+            }
+        }
     }
 }

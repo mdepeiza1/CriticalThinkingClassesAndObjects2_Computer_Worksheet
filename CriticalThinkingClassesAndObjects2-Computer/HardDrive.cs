@@ -17,5 +17,10 @@ namespace CriticalThinkingClassesAndObjects2_Computer
             this.totalStorage = totalStorage;
             this.availableStorage = availableStorage;
         }
+
+        public void ProcessInstall(Applications app, HardDrive hardDrive, RAM ram)
+        {
+            hardDrive.ApplicationsInHardDrive.Add(app);
+        }
     }
 }

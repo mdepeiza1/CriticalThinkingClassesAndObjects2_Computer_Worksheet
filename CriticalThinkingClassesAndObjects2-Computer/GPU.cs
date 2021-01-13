@@ -8,8 +8,8 @@ namespace CriticalThinkingClassesAndObjects2_Computer
 {
     class GPU
     {
-        string manufacturer;
-        double effectiveMemory;
+        public string manufacturer;
+        public double effectiveMemory;
 
         public GPU(string manufacturer, double effectiveMemory)
         {
